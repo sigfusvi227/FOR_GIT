@@ -1,0 +1,1 @@
+print("Sigfús Már Viðarsson   FOR1TÖ05BU   Git Verkefni 25.1")
