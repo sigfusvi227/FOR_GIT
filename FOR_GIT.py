@@ -1,4 +1,6 @@
+
 print("Sigfús Már Viðarsson   FOR1TÖ05BU   Git Verkefni 25.1")
+
 print("")
 print("")
 print("Dæmi 1")
@@ -23,3 +25,25 @@ eftirnafn = input("Eftirnafn: ")
 print ("Halló" , (fornafn) , (eftirnafn))
 print("")
 print("Dæmi 2 Lokið")
+print("")
+print("")
+print("")
+
+print("Dæmi 3")
+print("Skrifaðu texta og ég mun segja þér hversu margir hástafir og lástafir eru í textanum.")
+print("")
+texti = input("Skrifaðu inn texta: ")
+telhatala = 0
+tellagtala = 0
+tellagtalaeftir = 0
+for x in range(len(texti)):
+    if(texti[x].isalpha() and texti[x].isupper()):
+        telhatala += 1
+        if(x !=(len(texti)-1)):
+            if(texti[x+1].islower()):
+                tellagtalaeftir += 1
+    if(texti[x].isalpha() and texti[x].islower()):
+        tellagtala += 1
+print ("Hversu margar hástafur: ",telhatala)
+print ("Hversu margar lástafur: ",tellagtala)
+print ("Hversu margar lástafur sem kemur eftir hástafi: ",tellagtalaeftir)
